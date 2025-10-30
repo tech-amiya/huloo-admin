@@ -1,6 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import cookieParser from "cookie-parser";
 import session from "express-session";
+import dotenv from 'dotenv';
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 dotenv.config();
@@ -125,7 +126,6 @@ app.use((req, res, next) => {
   server.listen({
     port,
     host: "0.0.0.0",
-    reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
   });

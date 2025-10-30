@@ -1,7 +1,9 @@
 import { initializeApp, getApps, cert } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
+import dotenv from 'dotenv';
+
 dotenv.config();
-const app = express();
+
 // Initialize Firebase Admin SDK
 let adminApp;
 try {
