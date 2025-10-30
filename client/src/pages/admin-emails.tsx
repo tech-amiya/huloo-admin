@@ -22,7 +22,7 @@ export default function AdminEmails() {
   const [isHtmlMode, setIsHtmlMode] = useState(false);
   
   // App update notification state
-  const [androidLink, setAndroidLink] = useState("https://play.google.com/store/apps/details?id=com.tokshop.live&hl=en");
+  const [androidLink, setAndroidLink] = useState("https://play.google.com/store/apps/details?id=com.huloo.live&hl=en");
   const [iosLink, setIosLink] = useState("https://testflight.apple.com/join/jjzjjnC2");
   const [updateRecipientType, setUpdateRecipientType] = useState<"all" | "individual">("all");
   const [updateRecipientEmail, setUpdateRecipientEmail] = useState("");

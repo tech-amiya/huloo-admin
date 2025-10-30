@@ -320,7 +320,7 @@ export default function AdminSettings() {
                           src={
                             formData.app_logo.startsWith('http') 
                               ? formData.app_logo 
-                              : `${import.meta.env.VITE_ICONA_API_BASE || 'https://api.tokshoplive.com'}/${formData.app_logo.replace(/^\//, '')}`
+                              : `${import.meta.env.VITE_ICONA_API_BASE || 'https://api.huloo.live'}/${formData.app_logo.replace(/^\//, '')}`
                           } 
                           alt="App Logo" 
                           className="h-20 w-20 object-contain rounded border border-border bg-muted p-2"

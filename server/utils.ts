@@ -3,7 +3,7 @@ import type { IconaOrder, Bundle } from "../shared/schema";
 
 // API Configuration - configurable via environment variable
 // Remove trailing slash to prevent double slashes in URLs
-const apiBase = process.env.ICONA_API_BASE || "https://api.tokshoplive.com";
+const apiBase = process.env.ICONA_API_BASE || "https://api.huloo.live";
 export const ICONA_API_BASE = apiBase.replace(/\/$/, '');
 console.log(`[API Config] ICONA_API_BASE: ${ICONA_API_BASE}`);
 

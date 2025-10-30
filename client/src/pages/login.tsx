@@ -26,7 +26,7 @@ export default function Login() {
   useEffect(() => {
     const fetchAppLogo = async () => {
       try {
-        const response = await fetch('https://api.tokshoplive.com/api/theme-colors');
+        const response = await fetch('https://api.huloo.live/api/theme-colors');
         if (response.ok) {
           const data = await response.json();
           if (data.logo_url) {
@@ -152,7 +152,7 @@ export default function Login() {
             {appLogo ? (
               <img 
                 src={appLogo} 
-                alt="tokshop" 
+                alt="huloo"
                 className="h-16 w-auto object-contain"
                 data-testid="img-app-logo"
               />
@@ -161,7 +161,7 @@ export default function Login() {
                 <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center mr-3">
                   <span className="text-black text-xl font-bold">t</span>
                 </div>
-                <span className="text-2xl font-bold text-white">tokshop</span>
+                <span className="text-2xl font-bold text-white">huloo</span>
               </>
             )}
           </div>

@@ -42,13 +42,13 @@ interface SidebarProps {
 export function Sidebar({ isCollapsed, onToggle }: SidebarProps) {
   const [location] = useLocation();
   const { user } = useAuth();
-  const [appName, setAppName] = useState('tokshop');
+  const [appName, setAppName] = useState('huloo');
 
   // Fetch app name from public API
   useEffect(() => {
     const fetchAppName = async () => {
       try {
-        const response = await fetch('https://api.tokshoplive.com/api/theme-colors');
+        const response = await fetch('https://api.huloo.live/api/theme-colors');
         if (response.ok) {
           const data = await response.json();
           if (data.app_name) {

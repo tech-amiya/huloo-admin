@@ -184,7 +184,7 @@ export default function Purchases() {
         <body>
           <div class="header">
             <h1>Purchase Receipt</h1>
-            <p>tokshop</p>
+            <p>huloo</p>
           </div>
           
           <div class="order-info">
